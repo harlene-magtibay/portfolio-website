@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding-top: 65px;
+}
+
+.greeting {
+    color: #5a5a5a;
+}
+
+.myName {
+    color: #1a2942;
+    font-size: 73px;
+    font-family: "Raleway", sans-serif;
+}
+
+.downloadButton {
+    background-color: #1a2942;
+    text-decoration: none;
+    width: 190px;
+}
+
+.contactButton {
+    background-color: #0077b6;
+    text-decoration: none;
+    width: 190px;
+}
+
+.downloadButton:hover {
+    background-color: #0b3988;
+    color: #ffffff;
+}
+
+.contactButton:hover {
+    background-color: #0b3988;
+    color: #ffffff;
+}
