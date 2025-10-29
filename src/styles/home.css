@@ -1,10 +1,18 @@
 body {
   margin: 0;
-  padding-top: 65px;
+  padding-top: 40px;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .greeting {
     color: #5a5a5a;
+    font-size: 35px;
 }
 
 .myName {
@@ -13,24 +21,128 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+.subtitle {
+  color: #0077b6;
+}
+
 .downloadButton {
     background-color: #1a2942;
     text-decoration: none;
     width: 190px;
+    /* border: 1px solid #1a2942; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font-size: 20px;
 }
 
 .contactButton {
-    background-color: #0077b6;
+    background-color: #00ffff;
     text-decoration: none;
     width: 190px;
+    /* border: 1px solid #3a4f75; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    font-size: 20px;
 }
 
 .downloadButton:hover {
-    background-color: #0b3988;
+    background-color: #043ea1;
     color: #ffffff;
 }
 
 .contactButton:hover {
-    background-color: #0b3988;
+    background-color: #043ea1;
     color: #ffffff;
+}
+
+.profile-image {
+  max-width: 450px;
+  height: auto;
+}
+
+
+.aboutContainer {
+    background-color: #373f59;
+}
+
+.aboutText {
+    color: #00ffff;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .myName {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .myName {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .downloadButton, .contactButton {
+    width: 160px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .myName {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .greeting {
+    font-size: 25px;
+  }
+
+  .downloadButton, .contactButton {
+    width: 150px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  .profile-image {
+    max-width: 320px !important;
+  }
+
+  .home-container {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .myName {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 19px;
+  }
+
+  .btn-custom {
+    width: 160px;
+    padding: 8px 20px;
+  }
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a2942;
 }

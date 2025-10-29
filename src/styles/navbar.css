@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: white;
-  border-bottom: 2px solid #5a5a5a;
+  border-bottom: 2px solid #00ffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,6 +41,13 @@ header {
   text-decoration: none;
   transition: 0.3s;
   font-size: 18px;
+}
+
+.nav-link.active {
+  color: #00ffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
 }
 
 .nav-links a:hover {
