@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
           <div className="mt-4 d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
             <Link
               to="/projects"
-              style={{ textDecoration: "none", color: "#ffffff" }} 
+              style={{ textDecoration: "none", color: "#ffffff" }}
             >
               <button className="fw-bold py-2 downloadButton">
                 Download CV
@@ -34,9 +35,7 @@ const Home = () => {
               to="/contact"
               style={{ textDecoration: "none", color: "#3a4f75" }}
             >
-              <button className="fw-bold py-2 contactButton">
-                Contact Me
-              </button>
+              <button className="fw-bold py-2 contactButton">Contact Me</button>
             </Link>
           </div>
         </div>
@@ -51,6 +50,8 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <About />
     </div>
   );
 };

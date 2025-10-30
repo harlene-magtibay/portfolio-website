@@ -3,6 +3,11 @@ body {
   padding-top: 40px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 .home-container {
   min-height: 100vh;
   display: flex;

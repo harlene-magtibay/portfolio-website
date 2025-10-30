@@ -1,0 +1,97 @@
+.about-section {
+  background-color: #373f59;
+  color: #ffffff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow-x: hidden; /* prevents horizontal scroll */
+}
+
+
+
+/* Title */
+.about-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+/* Description text */
+.about-description {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 1000px;
+  color: #d6d9e0;
+}
+
+.education {
+    background: linear-gradient(rgba(47, 59, 86, 0.66)), url("/images/gradDay.jpg");
+}
+
+.work {
+    background: linear-gradient(rgba(47, 59, 86, 0.66)), url("/images/internship.jpg");
+}
+
+.certifications {
+    background: linear-gradient(rgba(47, 59, 86, 0.66)), url("/images/certificates.svg");
+    
+}
+
+.education, .work, .certifications {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.educationText {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/* Cards */
+.about-card {
+  background-color: #4c5473;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-card:hover h5,
+.about-card:hover h6,
+.about-card:hover p,
+.about-card:hover li {
+  color: #373f59;
+  /* transition: color 0.3s ease-in-out; */
+}
+
+.about-card:hover {
+  background-color: #00ffff;
+  transform: translateY(-5px);
+}
+
+.about-card h4 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #d6d9e0;
+  font-size: 16px;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 35px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
